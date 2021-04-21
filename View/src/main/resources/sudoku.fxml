@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Pane layoutX="200.0" layoutY="228.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="hardButton" layoutX="56.0" layoutY="106.0" mnemonicParsing="false" text="%hardButton">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="easyButton" layoutX="56.0" layoutY="46.0" mnemonicParsing="false" text="%easyButton" toggleGroup="$group" />
+            <RadioButton fx:id="mediumButton" layoutX="56.0" layoutY="76.0" mnemonicParsing="false" text="%mediumButton" toggleGroup="$group" />
+            <Label fx:id="selectLevel" layoutX="23.0" layoutY="5.0" text="%selectLevel" />
+            <Button fx:id="startButton" layoutX="109.0" layoutY="143.0" mnemonicParsing="false" onAction="#startGame" text="%startButton" />
+         </children>
+      </Pane>
+      <Label fx:id="authorsLabel" layoutX="37.0" layoutY="544.0" text="\%authorsLabel" />
+      <MenuButton fx:id="selectLanguage" layoutX="238.0" layoutY="139.0" mnemonicParsing="false" text="%selectLanguage">
+        <items>
+          <MenuItem fx:id="englishButton" mnemonicParsing="false" onAction="#chooseEnglish" text="%englishButton" />
+          <MenuItem fx:id="frenchButton" mnemonicParsing="false" onAction="#chooseFrench" text="%frenchButton" />
+            <MenuItem fx:id="polishButton" mnemonicParsing="false" onAction="#choosePolish" text="%polishButton" />
+        </items>
+      </MenuButton>
+
+   </children>
+</AnchorPane>

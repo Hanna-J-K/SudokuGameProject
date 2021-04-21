@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../:\Users\hanka\Desktop\Projekt bazowy\.idea/dataSources/
+/dataSources.local.xml
+/target/
+/.idea/
+# Editor-based HTTP Client requests
+/httpRequests/
